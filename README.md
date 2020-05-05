@@ -15,17 +15,22 @@ This script creates in your Lync Front-End two Scheduled Tasks that fire each ti
 <p><span style="font-size: small;">First off, realise that the script needs to be run from the folder you&rsquo;re going to leave it in. The script captures its path in the process of creating the Scheduled task, and the Action it runs is going to look for it  in that location &ndash; so make sure you don&rsquo;t go moving or deleting it after you run the &ldquo;create&rdquo; step!</span></p>
 <p><span style="font-size: small;">.\New-LyncMeetingWarmup.ps1 -CreateTasks -Verbose</span></p>
 <pre><span style="font-size: small;"><br /></span></pre>
-<pre><span style="font-size: small;"><img id="132615" src="https://i1.gallery.technet.s-msft.com/new-lyncmeetingwarmupps1-f2ad121f/image/file/132615/1/new-lyncmeetingwarmup-create.png" alt="" width="677" height="139" /><br /></span></pre>
+
+<img src="https://user-images.githubusercontent.com/11004787/81053634-bf498c00-8f08-11ea-84eb-de5458ece933.png" alt="" width="600" />
 <p><span style="font-size: small;">Done.</span></p>
 <p><span style="font-size: small;">The two Schedules look like this, with only minor differences in the Triggers and Actions to discern between a recycle of the Internal or External site<br /> </span></p>
-<p><img id="132551" src="https://i1.gallery.technet.s-msft.com/new-lyncmeetingwarmupps1-f2ad121f/image/file/132551/1/new-lyncmeetingwarmup-task.png" alt="" width="1254" height="733" /></p>
+
+<img src="https://user-images.githubusercontent.com/11004787/81053699-d7b9a680-8f08-11ea-980c-0b738c48371e.png" alt="" width="600" />
+
 <h3>Query the Tasks</h3>
 <p><span style="font-size: small;">You can also run a query to see if or when the tasks have run:</span></p>
 <pre><span style="font-size: small;">.\New-LyncMeetingWarmup.ps1 &ndash;GetScheduledTaskInfo </span></pre>
 <p><span style="font-size: small;">(The &ndash;verbose switch doesn&rsquo;t reveal any extra info at this stage)</span></p>
-<p><img id="132554" src="https://i1.gallery.technet.s-msft.com/new-lyncmeetingwarmupps1-f2ad121f/image/file/132554/1/new-lyncmeetingwarmup-querytaskinfo.png" alt="" width="677" height="360" /></p>
+
+<img src="https://user-images.githubusercontent.com/11004787/81053770-f6b83880-8f08-11ea-997f-078d92f21357.png" alt="" width="600" />
 <p><span style="font-size: small;">Here&rsquo;s the triggering event in the Event Viewer:</span></p>
-<p><span style="font-size: small;"><img id="132553" src="https://i1.gallery.technet.s-msft.com/new-lyncmeetingwarmupps1-f2ad121f/image/file/132553/1/new-lyncmeetingwarmup-event5074-edit.png" alt="" width="640" height="445" /><br /> </span></p>
+
+<img src="https://user-images.githubusercontent.com/11004787/81053809-0768ae80-8f09-11ea-8c48-0f19de1fd62b.png" alt="" width="600" />
 <p>&nbsp;</p>
 <h3><span style="font-size: small;">Revision History</span></h3>
 <p><span style="font-size: small;"><br /> </span></p>
@@ -66,4 +71,10 @@ This script creates in your Lync Front-End two Scheduled Tasks that fire each ti
 <p><span style="font-size: small;">Creating a task in PowerShell: <a href="http://www.verboon.info/2013/12/powershell-creating-scheduled-tasks-with-powershell-version-3/"> http://www.verboon.info/2013/12/powershell-creating-scheduled-tasks-with-powershell-version-3/</a></span></p>
 <p><span style="font-size: small;">Tricky Task creation: <a href="http://stackoverflow.com/questions/20108886/scheduled-task-with-daily-trigger-and-repetition-interval"> http://stackoverflow.com/questions/20108886/scheduled-task-with-daily-trigger-and-repetition-interval</a> </span><br /> <span style="font-size: small;"><a href="https://p0w3rsh3ll.wordpress.com/2013/07/05/deprecated-features-of-the-task-scheduler/">https://p0w3rsh3ll.wordpress.com/2013/07/05/deprecated-features-of-the-task-scheduler/</a></span></p>
 <p>&nbsp;</p>
-<p><span style="font-size: small;">- Greig.</span></p>
+<br>
+
+\- G.
+
+<br>
+
+This script was originally published at [https://greiginsydney.com/new-lyncmeetingwarmup/](https://greiginsydney.com/new-lyncmeetingwarmup/).
