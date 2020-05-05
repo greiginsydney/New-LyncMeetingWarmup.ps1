@@ -2,7 +2,7 @@
 
 This script creates in your Lync Front-End two Scheduled Tasks that fire each time your IIS App Pools are "recycled". The tasks generate a fake meeting join to ensure the sites are always ready for users. This script automates Drago Totev's process, & he deserves all the credit.
 
-<span style="color: #ff0000;"> ** Current version: v1.5 - 12th November 2019. ** 
+**Current version: v1.5 - 12th November 2019.** 
 
 Complaints regarding a slow meeting join process in Lync aren't at all uncommon, and in many cases are actually as a result of IIS's automatic recycling process, itself intended to improve reliability of the IIS  websites.
 
@@ -36,7 +36,7 @@ The two Schedules look like this, with only minor differences in the Triggers an
 You can also run a query to see if or when the tasks have run:
 
 ```powershell
-.\New-LyncMeetingWarmup.ps1 &ndash;GetScheduledTaskInfo
+.\New-LyncMeetingWarmup.ps1 -GetScheduledTaskInfo
 ```
 
 (The -verbose switch doesn't reveal any extra info at this stage)
